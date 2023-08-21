@@ -1,0 +1,300 @@
+/* 공통부분 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* header 부분 */
+
+header {
+    text-align: center;
+    height: calc(80px + 774px);
+    /*배너_탑 + 슬라이드 이미지 크기*/
+}
+
+header nav,
+header nav li {
+    display: inline-block;
+}
+
+
+/*header 메뉴창 */
+
+
+#banner_top {
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+header hr {
+    width: 980px;
+    margin: auto;
+    border: 0;
+    height: 1px;
+    background: #bbb;
+    transform: translateY(-3px);
+}
+
+nav {
+    font-size: 22px;
+    left: 550px;
+    top: 160px;
+    position: absolute;
+
+}
+
+header nav li {
+    margin-left: 20px;
+}
+
+/* header 메뉴창 hover 부분 */
+
+.main_nav ul li {
+    position: relative;
+}
+
+.menu>ul {
+    display: none;
+    position: absolute;
+    top: 130%;
+    left: -450%;
+    background-color: rgb(64, 64, 64);
+    opacity: 0.7;
+    white-space: pre-wrap;
+    width: 220px;
+    line-height: 20px;
+}
+
+nav ul .menu:hover ul {
+    display: block;
+}
+
+/* header main_slide*/
+
+#main_slide {
+    z-index: -1;
+    /*banner-top 을 위로 보내기 위해 순서 변경*/
+    position: relative;
+    top: -70px;
+    height: 774px;
+    overflow: hidden;
+    transform: translateY(-22px);
+}
+#main_slide li{
+    display: inline-block;
+}
+
+/* header sub_slide */
+
+.sub_slide {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.sub_contain{
+    position: relative;
+    width: 980px;
+    height: 280px;
+    overflow: hidden;
+}
+.sub_list {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.btn{
+    color: white;
+    position: relative;
+    top: 120px;
+}
+
+.btn img{
+    width: 50px;
+}
+
+.hide{
+    left: -5px;
+    visibility: hidden;
+}
+.hide2{
+    visibility: hidden;
+}
+
+
+
+.sub_list img {
+    width: calc((980px / 5) - 10px);
+    height: 262.84px;
+}
+
+.sub_list li {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.inside {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+.hover{
+    display: none;
+}
+
+.sub_mini {
+    position: absolute;
+    top: 50%;
+    left: 1.5%;
+}
+
+
+.sub_list li:hover ul {
+    display: block;
+    /*ul에 hover시 block 밑 이미지 opacity*/
+}
+
+
+/* main 부분 */
+#main_body {
+    width: 980px;
+    margin: auto;
+
+}
+
+.title {
+    margin-top: 3%;
+    padding: 0.5%;
+    text-align: left;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.main_nav.hide {
+    transform: translateY(-500px);
+}
+
+.main_nav {
+    position: sticky;
+    top: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*main 부분 현재 상영작*/
+.main_img {
+    width: 20%;
+}
+
+.movie_menu {
+    list-style: none;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.movie_menu li a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 20px;
+}
+
+.movie_menu li:active {
+    text-decoration: underline;
+    background-color: rgb(64, 64, 64);
+    transition: 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.tabs {
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+#tab_content img {
+    float: left;
+    padding: 5px;
+    padding-right: 10px;
+}
+
+#tab_content p {
+    white-space: pre-line;
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+/*main 할인 이벤트*/
+
+.panel {
+    margin-bottom: 1%;
+}
+
+.name2 {
+
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.panel_heading {
+    font-weight: bold;
+    padding: 0.1%;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.panel_body {
+    padding: 1.5%;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.panel_body {
+    display: none;
+}
+
+.active .panel_body {
+    display: block;
+}
+
+/* footer 부분 */
+
+footer {
+    margin-top: 2%;
+    left: calc((100% - 980px)/2);
+    position: absolute;
+}
+
+footer div:nth-child(2) {
+    margin-top: 2%;
+}
+
+footer div li {
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+
+}
+
+footer div div:last-child {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}

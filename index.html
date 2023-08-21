@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./main_css_js/style.css">
+    <title>CGV시네마</title>
+    <script defer src="./main_css_js/script.js"></script>
+</head>
+
+<body>
+    <!-- 헤더부분 -->
+    <header>
+        <!-- 상단배너 -->
+        <div id="banner_top">
+            <img src="./image/banner_top.jpg" alt="banner_top">
+        </div>
+        <!-- 로고 -->
+        <div>
+            <a href="./index.html"><img src="./image/cgv_lotte.png" alt="Logo"></a>
+        </div>
+        <hr>
+        <!-- 메뉴창 -->
+        <nav class="main_nav">
+            <ul>
+                <li><a href="#">영화</a></li>
+                <li><a href="#">영화관</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">스토어</a></li>
+                <li><a href="#">로그인</a></li>
+                <li>
+                    <ul>
+                        <li><a href="./membership/member.html" target="_blank"
+                                class="material-symbols-outlined">person회원가입</a></li>
+                        <li><a href="#" class="material-symbols-outlined">confirmation_number바로예매</a></li>
+                        <li class="menu"><a href="#" class="material-symbols-outlined">menu</a>
+                            <ul>
+                                <li><a href="#" class="one">멤버십</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">MY 정보관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 슬라이드 쇼 -->
+        <div id="main_slide">
+            <ul>
+                <li><a><img src="./image/header2.jpg" alt="header2"></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="sub_slide">
+        <a class="btn first hide" data-direction = "-1" href="#">
+            <img src="./image/left btn.png" alt="back_img">
+        </a>
+        <div class="sub_contain">
+            <ul class="sub_list">
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/가디언즈 오브 갤럭시.jpg" alt="defend_universe">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/슈퍼 마리오 브라더스.jpg" alt="super_mario">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/극장판 짱구는 못말려.jpg" alt="dont_care">
+                </li>
+                <li>
+                    <ul class="sub_mini hover"> 
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/분노의 질주.jpg" alt="angry_run">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/드림.jpg" alt="dream">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/조제, 호랑이 그리고 물고기.jpg" alt="tiger_fish">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/존윅4.jpg" alt="killer">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/리바운드.jpg" alt="rebound">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/슬램덩크.jpg" alt="slam">
+                </li>
+                <li>
+                    <ul class="sub_mini hover">
+                        <li><a href="#" class="inside">예매하기</a></li>
+                        <li><a href="#" class="inside">상세보기</a></li>
+                    </ul>
+                    <img src="./image/스즈메의 문단속.jpg" alt="knockdoor">
+                </li>
+            </ul>
+        </div>
+        <a class="btn end hide2" data-direction = "1" href="#">
+            <img src="./image/right btn.png" alt="foward_img">
+        </a>
+    </div>
+    <!-- 메인부분 -->
+    <main>
+        <!-- 현재 상영작 -->
+        <div id="main_body">
+            <div class="title name">
+                <h1>현재 상영작</h1>
+            </div>
+            <div class="movie">
+                <ul class="movie_menu">
+                    <li><a href="#tabs-1">존 윅4</a></li>
+                    <li><a href="#tabs-2">리바운드</a></li>
+                    <li><a href="#tabs-3">슬램덩크</a></li>
+                    <li><a href="#tabs-4">스즈메의 문단속</a></li>
+                    <li><a href="#tabs-5">킬링로맨스</a></li>
+                </ul>
+            </div>
+            <div id="tab_content">
+                <div id="tabs_1" class="tabs 1">
+                    <img src="./image/존윅4.jpg" class="main_img" alt="존윅4">
+                    <h2>존 윅4</h2>
+                    <p>
+                        한때 전설적인 킬러였던 존 윅은 사랑하는 여자 헬렌을 만나 결혼하고 일에서 손을 떼기로 한다. 이에 비고
+                        타라소프는 마지막으로 어려운 임무를 줘서 업계에서 떠나지 못하게 하려 하지만, 존 윅은 산티노 디안토니
+                        오의 도움을 받아 임무를 완수하고 업계에서 손을 뗀다.
+
+                        하지만 은퇴하고 5년여의 시간이 지난 후 아내 헬렌 윅은 병으로 사망한다. 헬렌은 홀로 남을 존을 위해 데
+                        이지라는 이름의 비글 한마리를 미리 입양해 놓고, 헬렌 본인의 장례식 이후 강아지가 존의 집으로 보내진
+                        다. 강아지를 만난 존은 이 강아지가 아내의 마지막 선물이라는 것을 알고 서툴지만 강아지에게 조금씩 마
+                        음을 열며 다시 평화롭게 살아가려 한다.
+
+                        그러나 존의 차를 노린 유세프 타라소프의 습격을 받아 차를 빼앗기고 자식같았던 강아지마저 살해당하는
+                        사태가 벌어진다.
+                    </p>
+                </div>
+                <div id="tabs_2" class="tabs 2">
+                    <img src="./image/리바운드.jpg" class="main_img" alt="리바운드">
+                    <h2>리바운드</h2>
+                    <p>
+                        농구선수 출신 공익근무요원 ‘양현’은 해체 위기에 놓인 부산중앙고 농구부의 신임 코치로 발탁된다.
+                        하지만 전국대회에서의 첫 경기 상대는 고교농구 최강자 용산고. 팀워크가 무너진 중앙고는 몰수패라는 치
+                        욕의 결과를 낳고 학교는 농구부 해체까지 논의하지만, ‘양현’은 MVP까지 올랐던 고교 시절을 떠올리며 다시 선수들을 모은다.
+
+                        주목받던 천재 선수였지만 슬럼프에 빠진 가드 ‘기범’ 부상으로 꿈을 접은 올라운더 스몰 포워드 ‘규혁’ 점프
+                        력만 좋은 축구선수 출신의 괴력 센터 ‘순규’ 길거리 농구만 해온 파워 포워드 ‘강호’ 농구 경력 7년 차지만
+                        만년 벤치 식스맨 ‘재윤’ 농구 열정만 만렙인 자칭 마이클 조던 ‘진욱’까지 아무도 주목하지 않은 최약체 팀
+                        이었지만 신임 코치와 6명의 선수가 2012년 전국 고교농구대회에서 써 내려간 8일간의 기적.
+
+                        모두가 불가능이라 말할 때, 우리는 ‘리바운드’라는 또 다른 기회를 잡는다.</p>
+                </div>
+                <div id="tabs_3" class="tabs 3">
+                    <img src="./image/슬램덩크.jpg" class="main_img" alt="슬램덩크">
+                    <h2>슬램덩크</h2>
+                    <p>
+                        원작에서 볼 수 없었던 비하인드 스토리 NO.1 가드 송태섭의 새로운 모습!
+                        꿈과 열정 가득한 청춘부터 코끝이 찡해지는 가족 이야기까지!
+
+                        이번 작품에서는 원작에서 볼 수 없었던 비하인드 스토리, No.1 가드 송태섭의 새로운 모습이 펼쳐진다.
+                        송태섭의 어린 시절과 가족에 대한 이야기는 원작에서도 드러나지 않은 새로운 이야기로 많은 이들의 궁금증을 고조시킨다.
+
+                        이 영화는 북산 고등학교 농구팀의 포인트 가드 송태섭을 따라간다. 그에게는 3살 연상의 형인 송준섭이 있었는데, 그는 농구에 대한 그의 사랑에 영감을 주었다.
+
+                        강백호, 채치수, 정대만, 서태웅과 함께 고교 농구 챔피언 산왕공고에 도전한다!!
+                    </p>
+                </div>
+                <div id="tabs_4" class="tabs 4">
+                    <img src="./image/스즈메의 문단속.jpg" class="main_img" alt="슬램덩크">
+                    <h2>스즈메의 문단속</h2>
+                    <p>
+                        이 영화는 일본 서남쪽 규슈의 조용한 마을에 사는 17세 소녀 스즈메의 이야기를 다룬다.
+
+                        스즈메가 "문"을 찾는 젊은 남자를 만나면서 이야기가 시작된다. 둘은 산속의 폐가로 가서 오래된 문을 발견
+                        한다. 마치 무언가에 홀린듯 스즈메는 문을 향해 손을 뻗치는데, 그 다음부터 일본 전역에 불미스러운 사건
+                        들이 일어난다.
+
+                        이 영화는 일본을 배경으로 "재난의 문"을 닫기 위해 일본 전역을 돌아다니는 이야기임과 동시에 재난이 일
+                        상화 된 현 시대에 자신의 성숙과 자유를 찾으려는 소녀의 모험과 사투에 관한 이야기이다.
+
+                        미야자키현의 조용한 마을에서 이모 이와토 타마키(岩戸 環)와 사는 17세 여고생 이와토 스즈메(岩戸 鈴芽)는 어느 날 꿈을 꾸는데...</p>
+                </div>
+                <div id="tabs_5" class="tabs 5">
+                    <img src="./image/킬링로맨스.jpg" class="main_img" alt="슬램덩크">
+                    <h2>킬링 로맨스</h2>
+                    <p>
+                        로맨스는 없다! JOHN NA 죽여주는 작전만 있을 뿐!
+
+                        대재앙 같은 발연기로 국민 조롱거리로 전락한 톱스타 ‘여래’(이하늬). 현실에서 벗어나고자 떠난 남태평양
+                        ‘콸라’섬에서 운명처럼 자신을 구해준 재벌 ‘조나단’(이선균)을 만나 결혼을 하고 새로운 인생을 꿈꾸며 돌연
+                        은퇴를 선언한다.
+
+                        한편, 서울대가 당연한 집안에서 홀로 고독한 입시 싸움 중인 4수생 ‘범우’(공명)는 한때 자신의 최애였던 여
+                        래가 옆집에 이사온 것을 알게 되고 날마다 옥상에서 단독 팬미팅(?)을 여는 호사를 누린다.
+
+                        그러던 어느 날 조나단의 사업 확장을 위한 인형 역할에 지친 여래는 완벽한 스크린 컴백을 위해 범우에게
+                        SOS를 보내게 되고 이들은 여래의 인생을 되찾기 위한 죽여주는 계획을 함께 모의하는데…
+                    </p>
+                </div>
+            </div>
+            <section>
+                <div class="title name2">
+                    <h2>할인 이벤트</h2>
+                </div>
+                <div class="panel active">
+                    <div class="panel_heading">
+                        + 현대카드 할인 이벤트
+                    </div>
+                    <div class="panel_body" id="thisone">
+                        <p>할인: 월 1회 , 연 6회 한도 제공
+
+                            <li>10만원 이상 사용시: 3천원 청구할인</li>
+                            <li>20만원 이상 사용시: 5천원 청구할인</li>
+                            <li>40만원 이상 사용시: 9천원 청구할인</li>
+                        </p><br>
+                        <p>고객센터: 1588-8100</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel_heading">
+                        + 하나머니(Money) 포인트 이벤트
+                    </div>
+                    <div class="panel_body">
+                        <p>외환 YES, 하나머니포인트 보유 한도내에서 결제금액의 최대 100% 사용 가능</p>
+                        <p>포인트 부족 시 잔여포인트만큼 차감 후, 잔액 카드 결제</p><br>
+                        <p>고객센터: 1588-3200</p>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel_heading">
+                        + T 멤버십 통신사 할인 이벤트
+                    </div>
+                    <div class="panel_body">
+                        <p>VIP 등급
+                            <li>본인 무료관람 (연 3회)</li>
+                            <li>월~금 영화 1+1 (연 9회)</li>
+                            <li>7천원 이상 티켓에 한하여 적용</li>
+                            <li>통합 월 1회 한도 내에서 사용가능</li>
+                        </p><br>
+                        <p>전체 등급
+                            <li>영화 티켓 1매당 1,000원~최대4,000원 할인</li>
+                            <li>11,000원 이상 티켓에 한하여 적용(일 1회, 일 5매)</li>
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <!-- 푸터 부분 -->
+    <footer>
+        <!-- 하단배너 -->
+        <div>
+            <ul>
+                <li><img src="./image/귀를 기울이면.jpg" alt="banner_bottom"></li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <ul class="copyright">
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>이메일무단수집거부</li>
+                    <li>영상정보처리기기 운영 및 관리방침</li>
+                    <li>L.POINT회원안내</li>
+                    <li>배정기준</li>
+                    <li>채용안내</li>
+                    <li>광고/임대문의</li>
+                    <li>기업정보</li>
+                    <li>사회적책임</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="copyright">
+                    <li>대성남시 태수정구 올림픽로 500길 9700층</li>
+                    <li>고객센터 1544-8855(유료)</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="copyright">
+                    <li>대표이사 아이유</li>
+                    <li>사업자등록번호 313-87-00979</li>
+                    <li>통신판매업신고번호 제1184호</li>
+                    <li>개인정보 보호 책임자 김병문</li>
+                </ul>
+            </div>
+            <div>COPYRIGHT@ CGV CINEMA ALL RIGHT RESERVED</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

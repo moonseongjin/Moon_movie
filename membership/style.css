@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    margin: 50px auto;
+    width: 30%;
+}
+
+form div {
+    padding: 1%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.req{
+    float: right;
+    font-size: small;
+    opacity: 0.6;
+}
+
+.logo {
+    width: 33%;
+    height: 50px;
+    background: url(../image/cgv_lotte.png) 0/100%;
+    display: block;
+    text-indent: -9999px;
+}
+
+form div:last-of-type {
+    margin-bottom: 2%;
+}
+
+form div>button {
+    float: right;
+}
